@@ -12,10 +12,15 @@ import "./bootstrap.min.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      appVersion: 'I dont know',
+    };
   }
 
   render() {
+    const { state } = this
+    const { appVersion } = state;
+
     return (
       <div className="container" style={{ maxWidth: "500px"}}>
         <div className="row">
@@ -30,7 +35,7 @@ class App extends React.Component {
 
           {/* Footer */}
           <Footer>
-            <div>{"hello, I am a div"}</div>
+            <div>{"hello, I am a <div>"}</div>
           </Footer>
 
         </div>
