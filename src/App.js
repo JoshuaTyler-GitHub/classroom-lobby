@@ -12,26 +12,21 @@ import "./bootstrap.min.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      appVersion: 'I dont know',
-    };
+    this.state = {};
   }
 
   render() {
-    const { state } = this
-    const { appVersion } = state;
-
     return (
       <div className="container" style={{ maxWidth: "500px"}}>
         <div className="row">
           
           {/* Header */}
           <Header>
-            <h1 className="text-light">{"UI Fundamentals"}</h1>
+            <h1 className="text-light">{"Node.js #2"}</h1>
           </Header>
 
           {/* Countdown Clock */}
-          <CountdownClock classTime={"17:00:00"}/>
+          <CountdownClock classTime={"5:30:00 PM"}/>
 
           {/* Footer */}
           <Footer>

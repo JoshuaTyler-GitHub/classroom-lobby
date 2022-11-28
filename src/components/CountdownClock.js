@@ -28,7 +28,7 @@ class CountdownClock extends React.Component {
           style={{ maxWidth: "20rem" }}
         >
           <h2 className="text-primary">{"Current time is:"}</h2>
-          <h3>{`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`}</h3>
+          <h3>{`${date.toLocaleTimeString()}`}</h3>
         </div>
 
         {/* Class Time */}
